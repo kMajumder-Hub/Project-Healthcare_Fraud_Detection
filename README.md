@@ -67,7 +67,7 @@ This project has been configured to be used with AWS as well as on-premise infra
 Some simple changes are required(commented out codes) in [load_data_s3_to_db.py](/load_data_s3_to_db.py) file for connecting to local PostgreSQL instead of Redshift
 
 
-## Furure Scope
+## Future Scope
 
 **1.** If the dataset increases in size(say 100x), big data tool like stark can be deployed. An EMR cluster can be used for this purpose.
 
