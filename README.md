@@ -21,6 +21,17 @@ This data provides details about the claims filed for those patients who visit h
 **C) Beneficiary Details Data:**
 This data contains beneficiary KYC details like health conditions,regioregion they belong to etc.
 
+## Data Model
+
+The data model consists of four tables:
+*beneficiary_data - Contains all the patient information
+*inpatient_data - Contains information of inpatient attendence along with healthcare provider information
+*outpatient_data - Contains information of outpatient attendence along with healthcare provider information
+*fraudalent_provider - Used to classify a provider as fraud or not.
+
+Following is a pictorial representation of the relational data model:
+![ERD Diagram](/ERD.png)
+
 ## Project Execution steps
 
 **1.** The dataset files are copied to a S3 bucket. As of now, this step has been performed manually, However, this can also be achieved using the kaggle api.
@@ -56,7 +67,7 @@ Some simple changes are required(commented out codes) in [load_data_s3_to_db.py]
 
 ## Furure Scope
 
-**1.** If the dataset increases in size, big data tool like stark can be deployed. An EMR cluster can be used for this purpose.
+**1.** If the dataset increases in size(say 100x), big data tool like stark can be deployed. An EMR cluster can be used for this purpose.
 
 **2.** The entire pipeline can be automated using Apache Airflow.	
 
