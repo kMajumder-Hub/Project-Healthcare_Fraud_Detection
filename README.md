@@ -44,6 +44,7 @@ Following is a pictorial representation of the relational data model:
 * Drop any existig tables using [drop_table_script.py](/queries/drop_table_script.py)
 * Recreate the tables using [create_table_script.py](/queries/create_table_script.py)
 * Load data into the tables using [load_data_to_redshift.py](queries/load_data_to_redshift.py )
+* Validate the data  using [data_validator.py](/queries/data_validator.py) 
 
 **4.** [Medicare_Provider_Fraud_Detection_Analysis.ipynb](/Medicare_Provider_Fraud_Detection_Analysis.ipynb) notebook contains all the steps for exploratory data analysis and application of machine learning models. Below is the brief overview of the steps:
 
