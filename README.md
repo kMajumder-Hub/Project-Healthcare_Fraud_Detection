@@ -24,6 +24,7 @@ This data contains beneficiary KYC details like health conditions,regioregion th
 ## Data Model
 
 The data model consists of four tables:
+
 *beneficiary_data - Contains all the patient information
 *inpatient_data - Contains information of inpatient attendence along with healthcare provider information
 *outpatient_data - Contains information of outpatient attendence along with healthcare provider information
