@@ -2,7 +2,11 @@
 
 ## Project Objective
 
-This project aims to demonstrate the whole sprectrum of data ecosystem. It starts with loading kaggle dataset into Amazon S3, copying the S3 data into Redshift tables, using the data from Redshift for exploratory data analysis, and finally using machine learning models to predict.
+This project aims to demonstrate the whole sprectrum of data ecosystem.
+It digests data into a data warehouse using an automated etl pipeline. The data is a combination of patient's information, existing medical conditions, healthcare provider information, inpatient as well as outpatient claim records. After data ingestion, exploratory data analysis is carried out to clean the data and bring out vital statistics for visualization.
+The data is then fed to machine learning models to predict whether a particular healthcare provider is fraud. 
+A set of training data has been used to train the models.
+
 
 ## Dataset Description
 
@@ -60,12 +64,19 @@ Following is a pictorial representation of the relational data model:
 	* SVM
 	* Gradient Boosting
 	
-	
+## Technology
+
+* S3 - File storage for csv file
+* Redshift - Data Warehouse
+* PostgreSQL - Data Warehouse(Local deployment)
+* boto3 - AWS IAC
+* matplotlib - Data Visualization
+* scikit-learn - Machine learning models
+		
 ## Note
 
 This project has been configured to be used with AWS as well as on-premise infrastructure. A PostgreSQL database should be installed if this project needs to be executed on-premise.
 Some simple changes are required(commented out codes) in [load_data_s3_to_db.py](/load_data_s3_to_db.py) file for connecting to local PostgreSQL instead of Redshift
-
 
 ## Future Scope
 
