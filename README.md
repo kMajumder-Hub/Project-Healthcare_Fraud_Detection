@@ -72,6 +72,7 @@ Following is a pictorial representation of the relational data model:
 * boto3 - AWS IAC
 * matplotlib - Data Visualization
 * scikit-learn - Machine learning models
+* pyspark - Data manupulation
 		
 ## Note
 
